@@ -36,17 +36,24 @@
 
             // DONE You'll need to create a TacoBell class
             // that conforms to ITrackable
-            
+
 
             // Then, you'll need an instance of the TacoBell class
             // With the name and point set correctly
+            var point = new Point();
+            point.Latitude = latitude;
+            point.Longitude = longitude;
 
             var tacoBell = new TacoBell();
+            
+            tacoBell.Name = name;
+            tacoBell.Location = point;
+
 
             // Then, return the instance of your TacoBell class
             // Since it conforms to ITrackable
 
-            return null;
+            return tacoBell;
         }
     }
 }
