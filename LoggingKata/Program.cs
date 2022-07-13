@@ -23,10 +23,10 @@ namespace LoggingKata
 
             logger.LogInfo($"Lines: {lines[0]}");
 
-            // Create a new instance of your TacoParser class
+            // DONE Create a new instance of your TacoParser class
             var parser = new TacoParser();
 
-            // Grab an IEnumerable of locations using the Select command: var locations = lines.Select(parser.Parse);
+            // DONE Grab an IEnumerable of locations using the Select command: var locations = lines.Select(parser.Parse);
             var locations = lines.Select(parser.Parse).ToArray();
 
             // DON'T FORGET TO LOG YOUR STEPS
